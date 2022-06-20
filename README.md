@@ -1,32 +1,9 @@
-# mcSchool
-[![Build Status](https://travis-ci.org/zleba/mcSchool.svg?branch=master)](https://travis-ci.org/zleba/mcSchool)
-## Online running with Jupyter
+# PCD 21 June 2022
 
-You can explore the Jupyter notebooks using nbViewer or run them on the online cluster Mybinder.
-Check and run the Jupyter notebooks here: [nbViewer](https://nbviewer.jupyter.org/github/zleba/mcSchool/tree/master/exerciseNb) [myBinder](https://mybinder.org/v2/gh/zleba/mcSchool/master?filepath=exerciseNb)  
-Or the executed version: [nbViewer](https://nbviewer.jupyter.org/github/zleba/mcSchool/tree/master/exerciseNbExec) [myBinder](https://mybinder.org/v2/gh/zleba/mcSchool/master?filepath=exerciseNbExec)
+Clone locally (preferrably on your private machine).
 
-You can try to run in the new experimental Jupyter Lab environment
-[jupyterLab](https://mybinder.org/v2/gh/zleba/mcSchool/master?urlpath=lab)
-
-## Offline running with Jupyter
-In case that Docker is installed on you computer the only thing is to run the command in file `runNotebook` or for the new Lab environment `runLab`.
-
-If you want to have better control over the files, first download the git repository, by
-
-Use
-```
-git clone git@github.com:zleba/mcSchool.git
-```
-
-or download the archive.
-```
-wget https://github.com/zleba/mcSchool/archive/master.zip
-unzip master.zip
-```
-
-Then run script `./runNotebook` or `./runLab`, the environment will be ready in the browser under `localhost` address.
-The `temp` directory is link to the local machine so one can edit and run the local files in the browser.
+Then run script `./runNotebook` or `./runLab`: the environment will be ready in the browser under `localhost` address.
+The templates for the exercises are in the `temp/template` directory.
 
 ## Offline running of the Python programs
 
@@ -40,7 +17,7 @@ The `-i` is for interactive mode, which can be useful if some plots needs to be 
 
 ## Offline running of the C++ programs
 
-The c++ programs are longer and need to be compiled but run faster.
+The C++ programs are longer and need to be compiled but run faster.
 
 Compile in the standard way using make and run afterwards, all in the docker environment `rd`
 ```
@@ -50,11 +27,9 @@ cd exerciseCpp
 ```
 
 For the local running you may need to install docker on your computer (in case of Ubuntu):
-
 ```
 sudo apt install docker.io
 ```
-
 
 ## Offline running of the programs without docker on system with access to CVMFS file system
 
